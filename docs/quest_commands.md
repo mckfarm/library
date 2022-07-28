@@ -13,7 +13,7 @@ ssh -X [mmf8608@quest.it.northwestern.edu](mailto:mmf8608@quest.it.northwestern.
 ```
 
 ## Submitting an interactive session:
-- Interactive session - time in hours:min:sec
+Interactive session - time in hours:min:sec
 ```
 srun --account=b1042 --time=01:00:00 --partition=genomicsguest --mem=1G --pty bash -l
 srun --account=p31378 --time=01:00:00 --partition=short --mem=1G --pty bash -l
@@ -30,7 +30,7 @@ mv <source> <destination>
 
 
 ## Conda environments
-- [Conda environment management](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+[Conda environment management](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 ```
 module load python/anaconda3.6
 conda create --prefix /path/to/folder -c -y
@@ -41,7 +41,7 @@ conda activate /projects/b1052/pythonenvs/python3.9/genegrouper
 ---
 
 ## Transferring to/from Wells NAS server
-- must be in log in node
+must be in log in node
 ```
 lftp -p 22 -u mmf8608 sftp://129.105.86.3:5000/
 ```
@@ -67,7 +67,7 @@ Sort by size ====
 du -d 1 /path/to/directory | sort -n
 ```
 
-Is there room on Quest?
+Is there room in your allocation?
 ```
 checkproject <allocation>
 ```

@@ -6,5 +6,7 @@ description: "McKenna Farmer personal library"
 permalink: /
 ---
 
-# McKenna Farmer personal library
+# McKenna Farmer - computational library
 Site for storing workflows, computational notes, and useful code bits.
+
+
