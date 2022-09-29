@@ -1,12 +1,7 @@
 ---
 layout: default
-title: 16S amplicon sequencing explainer
+title: 16S explainer
 ---
-
-Check out the 16S analysis workflow page for details on processing raw sequences. 
-
----
-
 
 # Overview
 
