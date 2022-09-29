@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Data visualization
-nav_order: 3
 ---
 
 **Resources for data visualization**

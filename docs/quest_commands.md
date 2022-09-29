@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Quest commands
-nav_order: 4
 ---
 
 
