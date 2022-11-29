@@ -8,14 +8,13 @@ title: Quest commands
 
 ## Logging in to Quest:
 ```
-ssh -X [mmf8608@quest.it.northwestern.edu](mailto:mmf8608@quest.it.northwestern.edu)
+ssh -X NETID@quest.it.northwestern.edu
 ```
 
 ## Submitting an interactive session:
 Interactive session - time in hours:min:sec
 ```
 srun --account=b1042 --time=01:00:00 --partition=genomicsguest --mem=1G --pty bash -l
-srun --account=p31378 --time=01:00:00 --partition=short --mem=1G --pty bash -l
 srun --account=p31629 --time=01:00:00 --partition=short --mem=2G --pty bash -l
 ```
 
@@ -25,7 +24,6 @@ sbatch --test-only <job_submission_script>
 cp <source> <destination>
 mv <source> <destination>
 ```
-
 
 
 ## Conda environments
