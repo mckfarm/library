@@ -23,6 +23,7 @@ srun --account=p31629 --time=01:00:00 --partition=short --mem=2G --pty bash -l
 sbatch --test-only <job_submission_script>
 cp <source> <destination>
 mv <source> <destination>
+scancel -u <NETID>
 ```
 
 
@@ -31,8 +32,7 @@ mv <source> <destination>
 ```
 module load python/anaconda3.6
 conda create --prefix /path/to/folder -c -y
-source activate /location/of/environment
-conda activate /projects/b1052/pythonenvs/python3.9/genegrouper
+conda activate /location/of/environment
 ```
 
 ---
