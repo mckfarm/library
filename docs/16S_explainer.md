@@ -25,15 +25,15 @@ After amplified DNA has been produced, we send samples for sequencing to a seque
 
 # Data processing
 
-I typically analyze 16S data in two parts - (1) sequence cleaning/taxonomic assignment and (2) community analysis and data visualization. Many analysis pipelines can integrate both functions, including some of the software I will suggest below, but I prefer performing them separately. I perform sequence cleaning and taxonomic assignment on [Quest, Northwestern’s high performance computing cluster](https://www.it.northwestern.edu/research/user-services/quest/). We interact with the computing cluster through command line and bash scripting, which are detailed very nicely in the [intro to Quest tutorial video](https://www.youtube.com/watch?v=rIFbHt_2g4s) provided through IT. 
+I typically analyze 16S data in two parts - (1) sequence cleaning/taxonomic assignment and (2) community analysis and data visualization. Many analysis pipelines can integrate both functions, including some of the software I will suggest below, but I prefer performing them separately. I perform sequence cleaning and taxonomic assignment on [Quest, Northwestern’s high performance computing cluster](https://services.northwestern.edu/TDClient/30/Portal/Requests/ServiceDet?ID=88). We interact with the computing cluster through command line and bash scripting, which are detailed very nicely in the [intro to Quest tutorial video](https://www.youtube.com/watch?v=rIFbHt_2g4s) provided through IT. 
 
 I save most of my scripts and analysis files on [Github](https://github.com/), a popular platform for software development and data science. The biggest advantages of using Github over a basic local save on your hardware are (a) the files uploaded to Github are backed up online and (b) Github repositories (where you store your files) are easy to share and are collaborative across Github users. Github has a [desktop client](https://desktop.github.com/) that you can use to sync files between your computer and the online storage repository. 
 
-I also use a program to move files back and forth between my computer and Quest storage. I use [WinSCP](https://winscp.net/eng/index.php) (only available on Windows). [Filezilla](https://filezilla-project.org/) is also a good alternative.
+I also use a program to move files back and forth between my computer and Quest storage. I use [WinSCP](https://winscp.net/eng/index.php) (only available on Windows). [Filezilla](https://filezilla-project.org/) or [Cyberduck](https://cyberduck.io/) are good alternatives.
 
 ## Sequence cleaning and taxonomic assignment
 
-I use the program [QIIME2](https://qiime2.org/) to process 16S rRNA sequences. QIIME has relatively small learning curve and is accessible on Quest through an installed version called a module. I have an example of my QIIME pipeline available at this Github repo: https://github.com/mckfarm/wssc
+I use the program [QIIME2](https://qiime2.org/) to process 16S rRNA sequences. QIIME2 is a nice way to access multiple processing programs under one umbrella and syntax, reducing the total number of installations you need to worry about. QIIME2 has relatively small learning curve and is accessible on Quest through an installed version called a module. I have examples of my QIIME pipeline available on the [16S example workflow page](https://mckfarm.github.io/library/docs/16S_workflow.html).
 
 The major steps are listed below:
 
